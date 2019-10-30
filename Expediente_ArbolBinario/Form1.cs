@@ -34,5 +34,12 @@ namespace Expediente_ArbolBinario
             }
             write.Close();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Menu formmenu = new Menu();
+            formmenu.Show();
+            this.Hide();
+        }
     }
 }

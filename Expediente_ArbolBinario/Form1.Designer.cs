@@ -105,6 +105,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "SALIR";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Creacion_Expediente
             // 

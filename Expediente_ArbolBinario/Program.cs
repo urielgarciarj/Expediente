@@ -16,7 +16,7 @@ namespace Expediente_ArbolBinario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Creacion_Expediente());
+            Application.Run(new Menu());
         }
     }
 }
