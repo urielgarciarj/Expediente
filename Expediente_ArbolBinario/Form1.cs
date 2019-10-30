@@ -20,10 +20,12 @@ namespace Expediente_ArbolBinario
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ABB arbol = new ABB();
             //Al presionar el boton tomara todos los datos introducidos y los metera a un archivo
             StreamWriter write = new StreamWriter(@"D:\Visual Studio\Expediente\Expediente_ArbolBinario\Expedientes\"+ txtName.Text + ".txt", true);
             try
             {
+                arbol.insertar(txtName.Text);
                 write.WriteLine("Edad: " + txtAge.Text);
                 write.WriteLine("Antecedentes: " + richTextBox.Text);
                 write.WriteLine("\n");
