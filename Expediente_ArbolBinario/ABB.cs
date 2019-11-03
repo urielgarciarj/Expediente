@@ -56,9 +56,19 @@ namespace Expediente_ArbolBinario
             }
         }//FIN METODO INSERTAR
 
+        public bool busqueda(string busqueda)
+        {
+            if(raiz == null)
+            {
+                return false;
+            }
+            return false;
+        }
 
         //METODO MOSTRAR ABB EN PREORDEN(RAIZ, IZQUIERDA, DERECHA)
-        //public void PreOrden(Nodo raiz){}
+        public void PreOrden(Nodo raiz){
+            
+        }
 
     }
 }
