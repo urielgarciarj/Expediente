@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Expediente_ArbolBinario
 {
@@ -21,7 +23,6 @@ namespace Expediente_ArbolBinario
             {
                 raiz = new Nodo();
                 raiz.valor = valor;
-
             }
             else
             {
@@ -66,8 +67,15 @@ namespace Expediente_ArbolBinario
         }
 
         //METODO MOSTRAR ABB EN PREORDEN(RAIZ, IZQUIERDA, DERECHA)
-        public void PreOrden(Nodo raiz){
-            
+        public void PreOrden(Nodo raiz, string busqueda){
+            if (raiz.valor == busqueda)
+            {
+                MessageBox.Show("Se encontro el valor: " + busqueda + " en el arbol");
+            }
+            if (raiz.hi != null)
+                PreOrden(raiz.hi, busqueda);
+            if(raiz.hd != null)
+                PreOrden(raiz.hd, busqueda);
         }
 
     }

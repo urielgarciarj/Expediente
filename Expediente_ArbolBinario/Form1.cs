@@ -23,6 +23,7 @@ namespace Expediente_ArbolBinario
             ABB arbol = new ABB();
             //Al presionar el boton tomara todos los datos introducidos y los metera a un archivo
             StreamWriter write = new StreamWriter(@"D:\Visual Studio\Expediente\Expediente_ArbolBinario\Expedientes\"+ txtName.Text + ".txt", true);
+            arbol.insertar(txtName.Text);
             try
             {
                 arbol.insertar(txtName.Text);

@@ -23,5 +23,12 @@ namespace Expediente_ArbolBinario
             creacion.Show();
             this.Hide();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Busqueda search = new Busqueda();
+            search.Show();
+            this.Hide();
+        }
     }
 }

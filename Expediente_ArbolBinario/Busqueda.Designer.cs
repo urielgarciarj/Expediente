@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox = new System.Windows.Forms.TextBox();
             this.button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -42,12 +42,12 @@
             this.label.TabIndex = 0;
             this.label.Text = "BUSQUEDA:";
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBox.Location = new System.Drawing.Point(148, 88);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(283, 20);
+            this.textBox.TabIndex = 1;
             // 
             // button
             // 
@@ -65,7 +65,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 235);
             this.Controls.Add(this.button);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.label);
             this.Name = "Busqueda";
             this.Text = "Busqueda";
@@ -77,7 +77,7 @@
         #endregion
 
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button button;
     }
 }
