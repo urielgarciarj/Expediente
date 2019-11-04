@@ -38,7 +38,7 @@
             this.btnCaseFile.Name = "btnCaseFile";
             this.btnCaseFile.Size = new System.Drawing.Size(518, 79);
             this.btnCaseFile.TabIndex = 0;
-            this.btnCaseFile.Text = "CREAR EXPEDIENTE";
+            this.btnCaseFile.Text = "CREAR EXPEDIENTESSS";
             this.btnCaseFile.UseVisualStyleBackColor = true;
             this.btnCaseFile.Click += new System.EventHandler(this.btnCaseFile_Click);
             // 

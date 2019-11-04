@@ -13,7 +13,7 @@ namespace Expediente_ArbolBinario
 {
     public partial class Creacion_Expediente : Form
     {
-        ABB arbol = new ABB();
+        
         public Creacion_Expediente()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace Expediente_ArbolBinario
             //arbol.insertar(txtName.Text);
             try
             {
-                arbol.insertar(txtName.Text);
+                Program.arbol.insertar(txtName.Text);
                 write.WriteLine("Edad: " + txtAge.Text);
                 write.WriteLine("Antecedentes: " + richTextBox.Text);
                 write.WriteLine("\n");

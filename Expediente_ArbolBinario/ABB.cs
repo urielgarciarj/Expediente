@@ -57,23 +57,21 @@ namespace Expediente_ArbolBinario
             }
         }//FIN METODO INSERTAR
 
-        public bool busqueda(string busqueda)
+        /*public bool busqueda(string busqueda)
         {
             if(raiz == null)
             {
                 return false;
             }
             return false;
-        }
+        }*/
 
         //METODO MOSTRAR ABB EN PREORDEN(RAIZ, IZQUIERDA, DERECHA)
         public void PreOrden(Nodo raiz, string busqueda){
-
-            MessageBox.Show(raiz.valor);
-             /*if (raiz.valor == busqueda)
+             if (raiz.valor == busqueda)
              {
                 MessageBox.Show("Se encontro el valor: " + busqueda + " en el arbol");
-             }*/
+             }
              if (raiz.hi != null)
                 PreOrden(raiz.hi, busqueda);
              if (raiz.hd != null)

@@ -13,7 +13,7 @@ namespace Expediente_ArbolBinario
 {
     public partial class Busqueda : Form
     {
-        ABB arbol;
+        
         public Busqueda()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace Expediente_ArbolBinario
 
         private void button_Click(object sender, EventArgs e)
         {
-            arbol.PreOrden(arbol.raiz, textBox.Text);
+            Program.arbol.PreOrden(Program.arbol.raiz, textBox.Text);
         }
     }
 }
