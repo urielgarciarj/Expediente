@@ -12,6 +12,8 @@ namespace Expediente_ArbolBinario
 {
     public partial class Menu : Form
     {
+        Creacion_Expediente creacion = new Creacion_Expediente();
+        Busqueda search = new Busqueda();
         public Menu()
         {
             InitializeComponent();
@@ -19,14 +21,14 @@ namespace Expediente_ArbolBinario
 
         private void btnCaseFile_Click(object sender, EventArgs e)
         {
-            Creacion_Expediente creacion = new Creacion_Expediente();
+            
             creacion.Show();
             this.Hide();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            Busqueda search = new Busqueda();
+            
             search.Show();
             this.Hide();
         }

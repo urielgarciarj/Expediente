@@ -10,7 +10,7 @@ namespace Expediente_ArbolBinario
 {
     class ABB
     {
-        public Nodo raiz;
+        public Nodo raiz = null;
         public ABB()
         {
             raiz = null;
@@ -68,13 +68,15 @@ namespace Expediente_ArbolBinario
 
         //METODO MOSTRAR ABB EN PREORDEN(RAIZ, IZQUIERDA, DERECHA)
         public void PreOrden(Nodo raiz, string busqueda){
-            if (raiz.valor == busqueda)
-            {
+
+            MessageBox.Show(raiz.valor);
+             /*if (raiz.valor == busqueda)
+             {
                 MessageBox.Show("Se encontro el valor: " + busqueda + " en el arbol");
-            }
-            if (raiz.hi != null)
+             }*/
+             if (raiz.hi != null)
                 PreOrden(raiz.hi, busqueda);
-            if(raiz.hd != null)
+             if (raiz.hd != null)
                 PreOrden(raiz.hd, busqueda);
         }
 

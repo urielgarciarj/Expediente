@@ -13,6 +13,7 @@ namespace Expediente_ArbolBinario
 {
     public partial class Creacion_Expediente : Form
     {
+        ABB arbol = new ABB();
         public Creacion_Expediente()
         {
             InitializeComponent();
@@ -20,10 +21,10 @@ namespace Expediente_ArbolBinario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ABB arbol = new ABB();
+            
             //Al presionar el boton tomara todos los datos introducidos y los metera a un archivo
-            StreamWriter write = new StreamWriter(@"D:\Visual Studio\Expediente\Expediente_ArbolBinario\Expedientes\"+ txtName.Text + ".txt", true);
-            arbol.insertar(txtName.Text);
+            StreamWriter write = new StreamWriter(@"C:\Users\Uriel\Desktop\Expedientes\" + txtName.Text + ".txt", true);
+            //arbol.insertar(txtName.Text);
             try
             {
                 arbol.insertar(txtName.Text);
