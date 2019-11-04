@@ -21,9 +21,8 @@ namespace Expediente_ArbolBinario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             //Al presionar el boton tomara todos los datos introducidos y los metera a un archivo
-            StreamWriter write = new StreamWriter(@"C:\Users\Uriel\Desktop\Expedientes\" + txtName.Text + ".txt", true);
+            StreamWriter write = new StreamWriter(@"C:\Users\Usuario\Desktop\Expedientes\" + txtName.Text + ".txt", true);
             //arbol.insertar(txtName.Text);
             try
             {

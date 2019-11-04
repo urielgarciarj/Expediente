@@ -13,7 +13,7 @@ namespace Expediente_ArbolBinario
 {
     public partial class Busqueda : Form
     {
-        
+        Contenido expedientes = new Contenido();
         public Busqueda()
         {
             InitializeComponent();
@@ -21,7 +21,22 @@ namespace Expediente_ArbolBinario
 
         private void button_Click(object sender, EventArgs e)
         {
-            Program.arbol.PreOrden(Program.arbol.raiz, textBox.Text);
+            if(Program.arbol.PreOrden(Program.arbol.raiz, textBox.Text))
+            {
+                expedientes.Show();
+                expedientes.contenido(textBox.Text);
+            }
+            else
+            {
+                MessageBox.Show("No se encontro Nodo");
+            }
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Close();
+            menu.Show();
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Expediente_ArbolBinario
 {
     static class Program
     {
+        //public static Contenido expedientes = new Contenido();
         public static ABB arbol = new ABB();
         /// <summary>
         /// Punto de entrada principal para la aplicación.
