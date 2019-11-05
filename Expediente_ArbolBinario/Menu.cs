@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Management;
+using System.IO;
 
 namespace Expediente_ArbolBinario
 {
@@ -31,6 +33,17 @@ namespace Expediente_ArbolBinario
             
             search.Show();
             this.Hide();
+        }
+
+        private void btnTree_Click(object sender, EventArgs e)
+        {
+            DirectoryInfo di = new DirectoryInfo(@"C:\Users\Uriel\Desktop\Expedientes");
+            foreach (var fi in di.GetFiles())
+            {
+                var nombre = Path.GetFileNameWithoutExtension(fi.Name);
+                //MessageBox.Show(nombre);
+                Program.arbol.insertar(nombre);
+            }
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.btnCaseFile = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.btnTree = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCaseFile
@@ -52,11 +53,22 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // btnTree
+            // 
+            this.btnTree.Location = new System.Drawing.Point(149, 322);
+            this.btnTree.Name = "btnTree";
+            this.btnTree.Size = new System.Drawing.Size(518, 79);
+            this.btnTree.TabIndex = 2;
+            this.btnTree.Text = "ACTUALIZAR ARBOL";
+            this.btnTree.UseVisualStyleBackColor = true;
+            this.btnTree.Click += new System.EventHandler(this.btnTree_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTree);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnCaseFile);
             this.Name = "Menu";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button btnCaseFile;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnTree;
     }
 }
