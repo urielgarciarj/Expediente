@@ -21,7 +21,7 @@ namespace Expediente_ArbolBinario
         public string contenido(string nombre)
         {
             TextReader leer;
-            leer = new StreamReader(@"C:\Users\Usuario\Desktop\Expedientes\" + nombre + ".txt");
+            leer = new StreamReader(@"C:\Users\Uriel\Desktop\Expedientes\" + nombre + ".txt");
             this.Text = nombre;
             textBox1.Text = (leer.ReadLine());
             richTextBox1.Text = (leer.ReadToEnd());
